@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r3N-OR-lI7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="3fR-tZ-YbU">
+            <objects>
+                <viewController id="mIr-qh-kx9" customClass="StorageViewController" customModule="FirebaseAnalyticsSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nCT-X9-Ctn"/>
+                        <viewControllerLayoutGuide type="bottom" id="gH1-RC-0S3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hFo-vY-9JJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Drw-tQ-v6J">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="4bH-Qi-DW7"/>
+                                    <constraint firstAttribute="width" constant="250" id="LqC-Dp-MHh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QON-Ve-JgY">
+                                <state key="normal" title="あっぷろーど"/>
+                                <connections>
+                                    <action selector="uploadButton:" destination="mIr-qh-kx9" eventType="touchUpInside" id="fct-Zc-wt1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Drw-tQ-v6J" firstAttribute="centerX" secondItem="hFo-vY-9JJ" secondAttribute="centerX" id="EdB-sd-leT"/>
+                            <constraint firstItem="QON-Ve-JgY" firstAttribute="top" secondItem="Drw-tQ-v6J" secondAttribute="bottom" constant="46" id="IOy-ZI-SYi"/>
+                            <constraint firstItem="Drw-tQ-v6J" firstAttribute="top" secondItem="nCT-X9-Ctn" secondAttribute="bottom" constant="86" id="ONl-xT-z3z"/>
+                            <constraint firstItem="QON-Ve-JgY" firstAttribute="centerX" secondItem="hFo-vY-9JJ" secondAttribute="centerX" id="cNF-OF-Pqq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="WCa-4v-x6W"/>
+                    <connections>
+                        <outlet property="iconImageView" destination="Drw-tQ-v6J" id="rh1-RI-M6b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnu-uB-cSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="503"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="a9H-7x-FdE">
+            <objects>
+                <viewController id="OtY-q2-WBq" customClass="RealTimeDatabaseViewController" customModule="FirebaseAnalyticsSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R05-Eo-tua"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zzk-yM-8Cq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9d1-6c-wuD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="もじ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg2-D6-mx3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXr-fz-1Yp">
+                                <state key="normal" title="かきこみ"/>
+                                <connections>
+                                    <action selector="writeButton:" destination="OtY-q2-WBq" eventType="touchUpInside" id="S4g-rT-HYU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tg2-D6-mx3" firstAttribute="top" secondItem="R05-Eo-tua" secondAttribute="bottom" constant="72" id="6Ej-1X-U6U"/>
+                            <constraint firstItem="mXr-fz-1Yp" firstAttribute="centerX" secondItem="9d1-6c-wuD" secondAttribute="centerX" id="QpP-W2-ia5"/>
+                            <constraint firstItem="Tg2-D6-mx3" firstAttribute="centerX" secondItem="9d1-6c-wuD" secondAttribute="centerX" id="gcP-WU-Krl"/>
+                            <constraint firstItem="mXr-fz-1Yp" firstAttribute="top" secondItem="Tg2-D6-mx3" secondAttribute="bottom" constant="32" id="xOc-ah-D4D"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="wht-2T-TQf"/>
+                    <connections>
+                        <outlet property="textLabel" destination="Tg2-D6-mx3" id="vG1-5s-TuZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AH-4I-Cm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="-152"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zuN-0u-PtB">
+            <objects>
+                <tabBarController id="r3N-OR-lI7" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ciV-6P-vzV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OtY-q2-WBq" kind="relationship" relationship="viewControllers" id="e6F-zs-5iG"/>
+                        <segue destination="mIr-qh-kx9" kind="relationship" relationship="viewControllers" id="4p1-RR-tb3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6P-gH-aOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="175"/>
+        </scene>
+    </scenes>
+</document>
